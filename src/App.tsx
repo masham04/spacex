@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { slide as Menu } from 'react-burger-menu'
+// import './App.css';
+// import logo from './logo.png'
+// import {Home} from './Home'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+
+ function App() {
+  console.log('App running')
+   return (
+    <Menu>
+    <a id="home" className="menu-item" href="/">Home</a>
+    <a id="about" className="menu-item" href="/about">About</a>
+    <a id="contact" className="menu-item" href="/contact">Contact</a>
+    
+  </Menu>
+//     <>
+//       <div className='top'>
+//        <img src={logo} width='300px' height='80px'/>
+//       </div>
+//       <Home /> 
+      
+//     </>
   );
-}
+ }
 
-export default App;
+ export default App;
